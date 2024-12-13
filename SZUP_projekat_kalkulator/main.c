@@ -30,6 +30,10 @@ float bnaa (float x, float y) {
     return pow(y,x);
 }
 
+float koren (float x) {
+    return sqrt(x);
+}
+
 int main()
 {
     int izbor;
@@ -38,7 +42,7 @@ int main()
     scanf("%f", &a);
     printf("Unesite drugi broj\n");
     scanf("%f", &b);
-    printf("Odaberite operaciju\n1. Sabiranje\n2. Oduzimanje\n3. Mnozenje\n4. Deljenje\n5. Ostatak pri deljenju\n6. a^b\n7. b^a\n");
+    printf("Odaberite operaciju\n1. Sabiranje\n2. Oduzimanje\n3. Mnozenje\n4. Deljenje\n5. Ostatak pri deljenju\n6. a^b\n7. b^a\n8. Koren iz a\n9. Koren iz b\n");
     scanf("%d", &izbor);
     if(izbor==1) {
         rezultat=sabiranje(a,b);
@@ -67,6 +71,14 @@ int main()
     else if(izbor==7) {
         rezultat=bnaa(a,b);
         printf("b^a: %f\n", rezultat);
+    }
+    else if(izbor==8) {
+        rezultat=koren(a);
+        printf("Koren broja a: %f\n", rezultat);
+    }
+    else if(izbor==9) {
+        rezultat=koren(b);
+        printf("Koren broja b: %f\n", rezultat);
     }
     else {
         printf("Neispravan izbor\n");

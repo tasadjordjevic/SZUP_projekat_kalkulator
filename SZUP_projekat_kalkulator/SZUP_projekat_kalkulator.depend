@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1734080403 source:c:\tasa\faks\sistemi za upravjanje dokumentima\szup_projekat_kalkulator\szup_projekat_kalkulator\main.c
+1734081014 source:c:\tasa\faks\sistemi za upravjanje dokumentima\szup_projekat_kalkulator\szup_projekat_kalkulator\main.c
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
